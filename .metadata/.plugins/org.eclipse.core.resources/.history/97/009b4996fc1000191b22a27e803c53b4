@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class Album {
+	private String title;
+	private ArrayList<Song> songs;
+	
+	public Album(String title, ArrayList<String> songs) {
+		this.title = title;
+		this.songs = new ArrayList<Song>();
+	}
+	
+}

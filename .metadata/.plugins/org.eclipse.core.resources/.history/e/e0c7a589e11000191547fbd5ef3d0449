@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class Customer {
+	private String name;
+	private ArrayList<Double> transaction;
+	
+	public Customer(String name, ArrayList<Double> transaction) {
+		this.name = name;
+		this.transaction = transaction;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public ArrayList<Double> getTransaction() {
+		return transaction;
+	}
+	
+	public static Customer createCustomer(String name, ArrayList<Double> transaction) {
+		return new Customer(name, transaction);
+	}
+	
+	
+	
+	
+}

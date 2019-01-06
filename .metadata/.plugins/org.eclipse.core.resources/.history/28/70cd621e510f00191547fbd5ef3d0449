@@ -1,0 +1,24 @@
+
+public class Player {
+	public String name;
+	public int hitpoints;
+	public String weapon;
+	
+	public void loseHealth(int damage) {
+		this.hitpoints -= damage;
+		
+		if (this.hitpoints <= 0) {
+			System.out.println("Player knocked out");
+			// reduce number of lives remaining for player
+			
+		}
+	}
+	
+	public int healthRemaining() {
+		return this.hitpoints;
+	}
+	
+	
+	
+	
+}

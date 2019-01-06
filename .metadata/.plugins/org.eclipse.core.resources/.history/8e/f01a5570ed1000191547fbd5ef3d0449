@@ -1,0 +1,23 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Bank absaBank = new Bank("absa");
+		absaBank.addBranch("Fourways");
+		absaBank.addCustomer("Fourways", "Lloyd", 10000);
+		absaBank.addCustomer("Fourways", "Adam", 2122);
+		absaBank.addCustomerTransaction("Fourways", "Lloyd", 500.43);
+		absaBank.addCustomerTransaction("Fourways", "Adam", 53.33);
+		
+		String capeBranch = "Cape Town";
+		absaBank.addBranch("Cape Town");
+		absaBank.addCustomer("Cape Town", "Gerald", 32);
+		absaBank.addCustomerTransaction("Cape Town", "Gerald", 45);
+		absaBank.addCustomer(branchName, customerName, initialAmount)
+		
+		
+		absaBank.listCustomers("Fourways", false);
+		absaBank.listCustomers("Cape Town", false);
+	}
+
+}

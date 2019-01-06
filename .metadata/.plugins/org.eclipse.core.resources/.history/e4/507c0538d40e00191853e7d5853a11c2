@@ -1,0 +1,6 @@
+
+public class Door {
+	private String type;
+	private int width;
+	private int height;
+}

@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class ReadingUserInputChallenge {
+
+	public static void main(String[] args) {
+		minAndMaxOfNumberAmount(5);
+		
+	}
+	
+	public static void sumOfNumberAmount(int amount) {
+		int sum = 0;
+		Scanner scanner = new Scanner(System.in);
+		for (int i = 1; i <= amount; i++) {
+			System.out.println("Enter number #" + i + ":");
+			
+			boolean isAnInt = scanner.hasNextInt();
+			
+			if (isAnInt) {
+				int number = scanner.nextInt();
+				sum += number;
+			} else {
+				i--;
+				System.out.println("Invalid symbol");
+			}
+			
+			scanner.nextLine(); // handle end of line (enter key)
+		}
+		
+		System.out.println("The sum = " + sum);
+		scanner.close();
+	}
+	
+	public static void minAndMaxOfNumberAmount(int amount) {
+		int min = 0;
+		int max = 0;
+		boolean first = true;
+		
+		Scanner scanner = new Scanner(System.in);
+		for (int i = 1; i <= amount; i++) {
+			System.out.println("Enter number:");
+			
+			boolean isAnInt = scanner.hasNextInt();
+			
+			if (isAnInt) {
+				int number = scanner.nextInt();
+				if (number > max) {
+					max = number;
+				}
+				
+				if (number < min) {
+					min = number;
+				}
+			} else {
+				i--;
+				System.out.println("Invalid symbol");
+			}
+			
+			scanner.nextLine(); // handle end of line (enter key)
+		}
+		
+		System.out.println("The minimun number is = " + min);
+		System.out.println("The maximum number is = " + max);
+		scanner.close();
+	}
+	
+
+}

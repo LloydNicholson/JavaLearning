@@ -1,0 +1,28 @@
+
+public class GreatestCommonDivisor {
+
+	public static void main(String[] args) {
+		System.out.println(getGreatestCommonDivisor(, 16));
+
+	}
+	
+	public static int getGreatestCommonDivisor(int first, int second) {
+		if (first < 0 || second < 0) {
+			return -1;
+		}
+		
+		// not right!!!!
+		int greatestDivisor = 0;
+		for (int i = 1; i <= first; i++) {
+			for (int j = 1; j <= second; j++) {
+				if (second % j == 0 && first % i == 0) {
+					greatestDivisor = j % i;
+				}
+			}
+		}
+	
+		return greatestDivisor;
+		
+	}
+
+}

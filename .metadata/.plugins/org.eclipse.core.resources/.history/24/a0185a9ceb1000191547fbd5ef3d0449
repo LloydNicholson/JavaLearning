@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Bank bank = new Bank("absa");
+		bank.addBranch("Fourways");
+		bank.addCustomer("Fourways", "Lloyd", 10000);
+		bank.addCustomer("Fourways", "Adam", 2122);
+		bank.addCustomerTransaction("Fourways", "Lloyd", 500.43);
+		
+		System.out.println(bank.listCustomers("Fourways", true));
+		
+	}
+
+}

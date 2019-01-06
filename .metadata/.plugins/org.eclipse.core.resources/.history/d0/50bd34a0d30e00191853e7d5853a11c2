@@ -1,0 +1,6 @@
+
+public class Resolution {
+	private int height;
+	private int width;
+	
+}

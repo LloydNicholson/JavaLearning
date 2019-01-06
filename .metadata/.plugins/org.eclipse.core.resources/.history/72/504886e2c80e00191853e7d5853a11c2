@@ -1,0 +1,28 @@
+
+public class Vehicle {
+	private String type;
+	private int size;
+	
+	private int speed;
+	private int direction;
+	
+	public Vehicle(String type, int size) {
+		this.type = type;
+		this.size = size;
+		
+		this.direction = 0;
+		this.speed = 0;
+	}
+	
+	public void steer(int direction) {
+		this.direction += direction;
+		System.out.println("Vehichle.steer(): Steering at " + direction + " degrees");
+	}
+	
+	public void move(int currentSpeed, int currentDirection) {
+		speed = currentSpeed;
+		direction = currentDirection;
+	}
+
+	
+}

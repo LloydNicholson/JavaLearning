@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;lettuce&apos; in &apos;Hamburger&apos; to &apos;lettuceAdded&apos;&#x0A;- Original project: &apos;OOPMasterChallenge&apos;&#x0A;- Original element: &apos;Hamburger.lettuce&apos;&#x0A;- Renamed element: &apos;Hamburger.lettuceAdded&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename getter method for field" delegate="false" deprecate="false" description="Rename field &apos;lettuce&apos;" flags="589826" getter="true" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{Main.java[Hamburger^lettuce" name="lettuceAdded" references="true" setter="false" stamp="1546524886086" textual="false" version="1.0"/>
+</session>

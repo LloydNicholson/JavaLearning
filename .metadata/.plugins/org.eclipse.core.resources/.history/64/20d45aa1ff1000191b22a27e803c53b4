@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Album album = new Album("Roadhouse", "McD");
+		album.addSong("YEah", 3.05);
+		
+		album.addToPlaylist(trackNumber, playlist)
+
+	}
+
+}

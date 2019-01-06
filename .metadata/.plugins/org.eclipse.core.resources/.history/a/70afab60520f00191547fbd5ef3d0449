@@ -1,0 +1,22 @@
+
+public class Printer {
+	private int tonerLevel = 100;
+	private int numberOfPagesPrinted;
+	private boolean isDuplexPrinter;
+	
+	public Printer(int tonerLevel, int numberOfPagesPrinted, boolean isDuplexPrinter) {
+		if (tonerLevel > 0 && tonerLevel <= 100) {
+			this.tonerLevel = tonerLevel;
+		}
+
+		this.numberOfPagesPrinted = numberOfPagesPrinted;
+		this.isDuplexPrinter = isDuplexPrinter;
+	}
+	
+	public void printPages(int number) {
+		numberOfPagesPrinted += number;
+	}
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Bank bank = new Bank("absa");
+		bank.addBranch("Fourways");
+		bank.addCustomer("Fourways", "Lloyd", 10000);
+		bank.addCustomer("Fourways", "Adam", 2122);
+		bank.addCustomerTransaction("Fourways", "Lloyd", 500.43);
+		bank.addCustomerTransaction("Fourways", "Adam", 53.33);
+		
+		bank.addBranch("Cape Town");
+		bank.addCustomer("Cape Town", "Gerald", 32);
+		bank.addCustomerTransaction("Cape Town", "Gerald", 45);
+		
+		
+		System.out.println(bank.listCustomers("Fourways", true));
+		System.out.println(bank.listCustomers("Cape Town", true));
+	}
+
+}

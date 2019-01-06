@@ -1,0 +1,17 @@
+
+public class Car extends Vehicle {
+	
+	private int gears;
+	private int wheels;
+	private int doors;
+	private boolean isManual;
+	
+	private int currentGear;
+	
+	public Car(String type, int size) {
+		super(type, size);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

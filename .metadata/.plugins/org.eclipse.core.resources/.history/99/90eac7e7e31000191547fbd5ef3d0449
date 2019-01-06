@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Branch {
+	private String name;
+	ArrayList<Customer> customer;
+
+	public Branch(ArrayList<Customer> customer, String name) {
+		this.name = name;
+		this.customer = new ArrayList<Customer>();
+	}
+	
+	public void addCustomer(String name, ArrayList<Customer> transaction) {
+		
+	}
+	
+	
+	
+	
+}

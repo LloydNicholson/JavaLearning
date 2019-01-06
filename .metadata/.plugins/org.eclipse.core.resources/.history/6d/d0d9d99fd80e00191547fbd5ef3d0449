@@ -1,0 +1,21 @@
+
+public class Resolution {
+	private int height;
+	private int width;
+	private int screenQuality;
+	
+	public Resolution(int height, int width, int screenQuality) {
+		this.height = height;
+		this.width = width;
+		this.screenQuality = screenQuality;
+	}
+	
+	public void changeScreenResolution(int height, int width) {
+		System.out.println("New res height is " + height + "px New res width is " + width + "px");
+	}
+	
+	public void changeQuality(int screenQuality) {
+		System.out.println("New screen quality is " + screenQuality);
+	}
+	
+}

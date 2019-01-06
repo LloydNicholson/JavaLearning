@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Chair theChair = new Chair("Leather", 10);
+		
+		Resolution nativeResolution = new Resolution(2000, 1200);
+		TV theTV = new TV("Samsung", 10, 20, nativeResolution);
+
+		Room theRoom = new Room(theTV, theDoor, theChair);
+	}
+	
+	
+
+}

@@ -1,0 +1,6 @@
+
+public class Room {
+	private TV theTV;
+	private Door theDoor;
+	private Chair theChair;
+}

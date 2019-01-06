@@ -1,0 +1,8 @@
+
+public class TV {
+
+	private String make;
+	private int weight;
+	
+	private Resolution nativeResolution;
+}

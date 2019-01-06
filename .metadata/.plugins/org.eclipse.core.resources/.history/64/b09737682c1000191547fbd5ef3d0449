@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Contacts {
+	private ArrayList<String> contacts = new ArrayList<String>();
+	
+	public void addContact() {
+		
+	}
+	
+	public void modifyContact() {
+		
+	}
+	
+	public void removeContact() {
+		
+	}
+	
+
+}

@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+
+public class GroceryList {
+ 	private ArrayList<String> groceryList = new ArrayList<String>();
+ 	
+ 	public ArrayList<String> getGroceryList() {
+		return groceryList;
+	}
+
+	public void addGroceryItem(String item) {
+ 		String itemToLower = item.toLowerCase();
+		groceryList.add(itemToLower);
+	}
+ 	
+ 	public void printGroceryList() {
+ 		System.out.println("You have " + groceryList.size() + " items in your grocery list");
+ 		for (int i = 0; i < groceryList.size(); i++) {
+			System.out.println((i + 1) + ". " + groceryList.get(i));
+		}
+	}
+	
+ 	public void modifyGroceryItem(String currentItem, String newItem) {
+ 		String newItemToLower = newItem.toLowerCase();
+ 		String currentItemToLower = currentItem.toLowerCase();
+		int position = findItem(currentItemToLower);
+		if (position >= 0) {
+			modifyGroceryItem(position, newItemToLower);
+		}
+	}
+ 	
+ 	private void modifyGroceryItem(int position, String newItem) {
+ 		String newItemToLower = newItem.toLowerCase();
+		groceryList.set(position, newItemToLower);
+		System.out.println("Grocery item " + (position+1) + " has been modified.");
+	}
+ 	
+ 	public void removeGroceryItem(String newItem) {
+ 		String itemToLower = newItem.toLowerCase();
+		int position = findItem(itemToLower);
+		if (position >= 0) {
+			removeGroceryItem(position);
+		}
+	}
+ 	
+ 	private void removeGroceryItem(int position) {
+		groceryList.remove(position);
+	}
+ 	
+ 	public int findItem(String searchItem) {
+ 		String searchItemToLower = searchItem.toLowerCase();
+
+		return groceryList.indexOf(searchItemToLower);
+	}
+ 	
+ 	public boolean onFile(String searchItem) {
+		int position = findItem(searchItem);
+		if (position >= 0) {
+			return true;
+		}
+		return false;
+	}
+ 	
+}

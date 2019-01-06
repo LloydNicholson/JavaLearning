@@ -1,0 +1,9 @@
+import java.util.ArrayList;
+
+public class Customer {
+	private Customer name;
+	private ArrayList<Double> transactions;
+	
+	
+	
+}

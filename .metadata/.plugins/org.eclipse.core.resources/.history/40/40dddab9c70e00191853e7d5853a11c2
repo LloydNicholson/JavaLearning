@@ -1,0 +1,50 @@
+
+public class Car extends Vehicle {
+	
+	private int gears;
+	private int wheels;
+	private String direction;
+	
+	public Car(int gears, int wheels) {
+		super("Car", 20);
+		this.gears = gears;
+		this.wheels = wheels;
+	}
+
+	public void turn(String direction) {
+		this.setDirection(direction.toLowerCase());
+		
+		if (direction != "left" || direction != "right") {
+			System.out.println("Invalid direction");
+		} else {
+			System.out.println("Turned " + direction);
+		}
+	}
+	
+	public int getGears() {
+		return gears;
+	}
+
+	public void setGears(int gears) {
+		this.gears = gears;
+	}
+
+	public int getWheels() {
+		return wheels;
+	}
+
+	public void setWheels(int wheels) {
+		this.wheels = wheels;
+	}
+
+	public String getDirection() {
+		return direction;
+	}
+
+	public void setDirection(String direction) {
+		this.direction = direction;
+	}
+	
+	
+	
+}

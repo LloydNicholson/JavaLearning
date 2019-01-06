@@ -1,0 +1,22 @@
+
+public class Chair {
+	private String upholstery;
+	private int numberOfChairs;
+	
+	public Chair(String upholstery, int numberOfChairs) {
+		this.upholstery = upholstery;
+		this.numberOfChairs = numberOfChairs;
+	}
+
+	public String getUpholstery() {
+		return upholstery;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+	
+	
+	
+	
+}

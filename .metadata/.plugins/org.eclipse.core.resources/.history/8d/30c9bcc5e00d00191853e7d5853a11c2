@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Car porsche = new Car();
+		Car holden = new Car();
+
+		porsche.setModel("Carrera");
+		System.out.println(porsche.getModel());
+		
+		holden.setColour("Red");
+		holden.setEngine("4.0");
+		
+		holden.setModel(model);
+	}
+
+}

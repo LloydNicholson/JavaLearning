@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer("Lloyd", 100);
+		Customer anotherCustomer = customer;
+		anotherCustomer.setBalance(43);
+		
+		System.out.println("Balance for customer " + customer.getName() + " is " + customer.getBalance());
+
+	}
+
+}

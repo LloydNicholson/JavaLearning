@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		BankAccount account1 = new BankAccount("22334", 0.0, "Lloyd Nicholson", "nichlloyd@gmail.com", "0823004043");
+		account1.deposit(45000);
+		account1.withdraw(300);
+		account1.withdraw(44000);
+		
+
+		
+	}
+}

@@ -1,0 +1,13 @@
+
+public class Outlander extends Car {
+	private int roadServiceMonths;
+
+	public Outlander(int gears, int wheels, int doors, boolean isManual, int currentGear,
+			int roadServiceMonths) {
+		super("Outlander", 2, 6, 5, 5, false);
+		this.roadServiceMonths = roadServiceMonths;
+	}
+	
+	
+	
+}

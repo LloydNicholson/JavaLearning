@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class ReadingUserInputChallenge {
+
+	public static void main(String[] args) {
+		sumOfNumberAmount(4);
+		
+	}
+	
+	public static void sumOfNumberAmount(int amount) {
+		int sum = 0;
+		Scanner scanner = new Scanner(System.in);
+		for (int i = 1; i <= amount; i++) {
+			System.out.println("Enter number #" + i + ":");
+			
+			boolean isAnInt = scanner.hasNextInt();
+			
+			if (isAnInt) {
+				int number = scanner.nextInt();
+				sum += number;
+			} else {
+				i--;
+				System.out.println("Invalid symbol");
+			}
+			
+			scanner.nextLine(); // handle end of line (enter key)
+		}
+		
+		System.out.println("The sum = " + sum);
+		scanner.close();
+	}
+
+}

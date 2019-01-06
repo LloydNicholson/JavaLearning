@@ -1,0 +1,12 @@
+
+public class Player {
+	public String name;
+	public String health;
+	public String weapon;
+	
+	public void loseHealth(int damage) {
+		this.health = health;
+	}
+	
+	
+}

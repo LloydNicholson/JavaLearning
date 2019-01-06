@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MobilePhone {
+	private String myNumber;
+	private ArrayList<Contact> myContacts;
+	
+	public MobilePhone(String myNumber) {
+		super();
+		this.myNumber = myNumber;
+		this.myContacts = new ArrayList<Contact>();
+	}
+	
+	public void addContact(Contact contact) {
+		myContacts.add(contact);
+	}
+	
+	public void modifyContact() {
+		
+	}
+	
+	public void removeContact() {
+		
+	}
+	
+	public void searchContact() {
+		
+	}
+}

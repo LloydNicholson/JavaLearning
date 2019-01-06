@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;name&apos; in &apos;Song&apos; to &apos;title&apos;&#x0A;- Original project: &apos;LinkedListChallenge&apos;&#x0A;- Original element: &apos;Song.name&apos;&#x0A;- Renamed element: &apos;Song.title&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename getter method for field" delegate="false" deprecate="false" description="Rename field &apos;name&apos;" flags="589826" getter="true" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{Song.java[Song^name" name="title" references="true" setter="false" stamp="1546700742291" textual="false" version="1.0"/>
+</session>

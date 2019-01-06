@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Printer printer1 = new Printer(100, 0, false);
+		
+		printer1.printPages(40);
+		printer1.getNumberOfPagesPrinted();
+		
+		
+	}
+
+}

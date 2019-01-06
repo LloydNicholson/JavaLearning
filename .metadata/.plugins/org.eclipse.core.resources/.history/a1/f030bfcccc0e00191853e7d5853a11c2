@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Outlander outlander = new Outlander(36);
+		
+		outlander.accelerate(56);
+		outlander.setcurrentDirection(23);
+		outlander.setcurrentSpeed(98);
+
+	}
+
+}

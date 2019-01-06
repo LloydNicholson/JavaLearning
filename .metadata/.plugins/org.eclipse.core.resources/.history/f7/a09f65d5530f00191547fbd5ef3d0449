@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Printer printer1 = new Printer(100, 0, false);
+		
+		printer1.printPages(40);
+		System.out.println("Total pages printed = " + printer1.getNumberOfPagesPrinted());
+		printer1.printPages(20);
+		System.out.println("Toner level is ");
+		System.out.println("Total pages printed = " + printer1.getNumberOfPagesPrinted());
+		
+		Printer printer2 = new Printer(100, 100, true);
+		printer2.printPages(34);
+		System.out.println();
+		System.out.println("Total pages printed = " + printer2.getNumberOfPagesPrinted());
+		
+		
+	}
+
+}

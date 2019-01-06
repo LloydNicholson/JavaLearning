@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Main {
+	
+	private static ArrayList<Album> albums = new ArrayList<Album>();
+
+	public static void main(String[] args) {
+		Album album = new Album("Roadhouse", "McD");
+		album.addSong("YEah", 3.05);
+		
+		System.out.println(album);
+		albums.add(album);
+
+	}
+
+}

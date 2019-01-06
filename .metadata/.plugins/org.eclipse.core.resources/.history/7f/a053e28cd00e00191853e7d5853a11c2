@@ -1,0 +1,10 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Dimensions dimensions = new Dimensions(20, 50, 30)
+		Case theCase = new Case("220B", "Dell", "240", dimensions);
+
+	}
+
+}

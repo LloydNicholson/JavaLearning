@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Chair theChair = new Chair("Leather", 10);
+		
+		TV theTV = new TV("Samsung", 10, 20, nativeResolution);
+
+	}
+	
+	
+
+}

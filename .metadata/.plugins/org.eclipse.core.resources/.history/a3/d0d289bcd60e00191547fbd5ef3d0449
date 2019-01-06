@@ -1,0 +1,16 @@
+
+public class Door {
+	private String type;
+	private int width;
+	private int height;
+	
+	public Door(String type, int width, int height) {
+		this.type = type;
+		this.width = width;
+		this.height = height;
+	}
+	
+	
+	
+	
+}

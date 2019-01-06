@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> intArrayList = new ArrayList<Integer>();
+		
+		for (int i = 0; i < intArrayList.size(); i++) {
+			
+		}
+		intArrayList.add(10);
+		System.out.println(intArrayList.toString());
+	}
+
+}

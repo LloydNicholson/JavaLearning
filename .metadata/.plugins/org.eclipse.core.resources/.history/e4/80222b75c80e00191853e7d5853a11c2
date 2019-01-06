@@ -1,0 +1,14 @@
+
+public class Car extends Vehicle {
+	
+	private int gears;
+	private int wheels;
+	private String direction;
+	
+	public Car(int gears, int wheels) {
+		super("Car", 20);
+		this.gears = gears;
+		this.wheels = wheels;
+	}
+	
+}

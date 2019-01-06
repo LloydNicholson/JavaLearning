@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Bank absa = new Bank("absa");
+		String name = "Default";
+		double initialAmount = 0;
+		Customer customer = new Customer(name, initialAmount);
+		customer.addTransaction(10000);
+		Branch fourways = new Branch("Fourways");
+		
+		fourways.addCustomerTransaction("Herbie", 5000);
+		
+		System.out.println(customer.getTransactions());
+	}
+
+}

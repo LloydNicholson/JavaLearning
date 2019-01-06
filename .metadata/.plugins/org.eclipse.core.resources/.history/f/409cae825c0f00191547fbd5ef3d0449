@@ -1,0 +1,65 @@
+class Car {
+	private boolean engine;
+	private int cylinder;
+	private String name;
+	private int wheels;
+	
+	public Car(int cylinder, String name) {
+		this.cylinder = cylinder;
+		this.name = name;
+		this.wheels = 4;
+		this.engine = true;
+	}
+	
+	public void startEngine(boolean onOrOff) {
+		boolean engineOn = onOrOff;
+		if (engineOn) {
+			System.out.println("Engine is on");
+		} 
+
+	}
+
+	public int getCylinder() {
+		return cylinder;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	
+}
+
+class Ferrari extends Car {
+
+	public Ferrari() {
+		super(10, "Ferrari");
+	}
+	
+}
+
+class Lamborghini extends Car {
+	
+	public Lamborghini(int cylinders, String name) {
+		super(cylinders, name);
+	}
+
+	@Override
+	public void startEngine(boolean onOrOff) {
+		System.out.println("Lamborghini starts engine");
+		super.startEngine(onOrOff);
+	}
+	
+	
+}
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Ferrari ferrari = new Ferrari();
+		ferrari.startEngine(false);
+	}
+
+}

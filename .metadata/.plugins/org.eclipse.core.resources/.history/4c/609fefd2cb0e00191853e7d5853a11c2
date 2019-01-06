@@ -1,0 +1,20 @@
+
+public class Outlander extends Car {
+	private int roadServiceMonths;
+
+	public Outlander(int gears, int wheels, int doors, boolean isManual, int currentGear,
+			int roadServiceMonths) {
+		super("Outlander", 2, 6, 5, 5, false);
+		this.roadServiceMonths = roadServiceMonths;
+	}
+	
+	public void accelerate(int rate) {
+		int newVelocity = getcurrentSpeed() + rate;
+		if (newVelocity == 0) {
+			stop();
+		} else if (newVelocity > 0 && newVelocity <= 10) {
+			changeGear(1);
+		}
+	}
+	
+}

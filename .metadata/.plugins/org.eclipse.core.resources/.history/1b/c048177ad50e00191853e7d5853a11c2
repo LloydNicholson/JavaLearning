@@ -1,0 +1,17 @@
+
+public class Room {
+	private TV theTV;
+	private Door theDoor;
+	private Chair theChair;
+	
+	public Room(TV theTV, Door theDoor, Chair theChair) {
+		this.theTV = theTV;
+		this.theDoor = theDoor;
+		this.theChair = theChair;
+	}
+	
+	public void setTVRes() {
+		theTV.getNativeResolution().changeScreenResolution(1400, 1200);
+	}
+	
+}

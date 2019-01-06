@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Branch {
+	private String name;
+	ArrayList<Customer> customers = new ArrayList<Customer>();
+
+	public Branch(ArrayList<Customer> customers, String name) {
+		this.customers = customers;
+		this.name = name;
+	}
+	
+	private void addNewCustomer(String customerName, ArrayList<Double> customer) {
+		
+	}
+	
+	
+}

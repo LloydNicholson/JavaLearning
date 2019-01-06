@@ -1,0 +1,20 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+//		BankAccount account1 = new BankAccount("22334", 0.0, "Lloyd Nicholson", "nichlloyd@gmail.com", "0823004043");
+//		account1.deposit(45000);
+//		account1.withdraw(300);
+//		account1.withdraw(44000);
+//		
+//		BankAccount newAccount = new BankAccount("Lloyd", "lloyd@gmail.com", "082 300 4321");
+//		System.out.println(newAccount.getAccountNumber() + " name " + newAccount.getCustomerName());
+		
+		
+		VipCustomer adam = new VipCustomer();
+		System.out.println(adam.getCreditLimit());
+		System.out.println(adam.getName());
+		System.out.println(adam.getEmail());
+		
+	}
+}

@@ -1,0 +1,9 @@
+
+public class Car extends Vehicle {
+	
+	private int gears;
+	private int wheels;
+	private String direction;
+
+	
+}

@@ -1,0 +1,12 @@
+
+public class Fish extends Animal {
+
+	private int gills;
+	private int eyes;
+	private int fins;
+	
+	public Fish(String name, int brain, int body, int size, int weight) {
+		super(name, brain, body, size, weight);
+		// TODO Auto-generated constructor stub
+	}
+}

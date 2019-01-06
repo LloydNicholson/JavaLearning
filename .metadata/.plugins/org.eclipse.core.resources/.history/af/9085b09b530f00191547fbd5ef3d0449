@@ -1,0 +1,37 @@
+
+public class Printer {
+	private int tonerLevel = 100;
+	private int numberOfPagesPrinted = 0;
+	private boolean isDuplexPrinter;
+	
+	public Printer(int tonerLevel, int numberOfPagesPrinted, boolean isDuplexPrinter) {
+		if (tonerLevel > 0 && tonerLevel <= 100) {
+			this.tonerLevel = tonerLevel;
+		} else {
+			System.out.println("Toner has reached max level");
+		}
+
+		this.numberOfPagesPrinted = numberOfPagesPrinted;
+		this.isDuplexPrinter = isDuplexPrinter;
+	}
+	
+	public void printPages(int number) {
+		if (isDuplexPrinter) {
+			numberOfPagesPrinted /= 2;
+		}
+		numberOfPagesPrinted += number;
+		System.out.println("Printed an additional " + number + " pages");
+	}
+
+	public int getNumberOfPagesPrinted() {
+		return numberOfPagesPrinted;
+	}
+	
+	public void refillToner() {
+		if (tonerLevel <= 50) {
+			this.tonerLevel += 100 - tonerLevel;
+		}
+	}
+	
+	
+}
